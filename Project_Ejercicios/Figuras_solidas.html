@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="assets/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/Css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Áreas
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Figuras_planas.html#areatriangulo">Área Triángulo</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#areaparalelogramo">Área
+                                        Paralelogramo</a></li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#arearectangulo">Área
+                                        Rectángulo</a></li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#areacuadrado">Área Cuadrado</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#arearombo">Área Rombo</a></li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#areacometa">Área Cometa</a></li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#areatrapecio">Área Trapecio</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#areacirculo">Área Círculo</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Perímetros
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Figuras_planas.html#pertriangulo">Perímetro
+                                        Triángulo</a></li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#perparalelogramo">Perímetro
+                                        Paralelogramo</a></li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#perrectangulo">Perímetro
+                                        Rectángulo</a></li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#percuadrado">Perímetro
+                                        Cuadrado</a></li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#perrombo">Perímetro Rombo</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#percometa">Perímetro Cometa</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#pertrapecio">Perímetro
+                                        Trapecio</a></li>
+                                <li><a class="dropdown-item" href="Figuras_planas.html#percirculo">Perímetro Círculo</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Volúmenes
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#vol_cubo">Volumen Cubo</a></li>
+                                <li><a class="dropdown-item" href="#vol_paralelepipedo">Volumen
+                                        Paralelepípedo</a></li>
+                                <li><a class="dropdown-item" href="#vol_cilindro">Volumen
+                                        Cilindro</a></li>
+                                <li><a class="dropdown-item" href="#vol_esfera">Volumen Esfera</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#vol_cono">Volumen Cono</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h2 class="text-center mb-4">Volúmenes</h2>
+
+        <section>
+            <div class="row justify-content-center text-center g-4">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="vol_cubo">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/cubo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cubo</h5>
+                            <p class="card-text">Volumen</p>
+
+                            <input type="number" class="form-control mb-2" id="lado1" placeholder="Lado l">
+                            <input type="number" class="form-control mb-2" id="lado2" placeholder="Lado l">
+                            <input type="number" class="form-control mb-3" id="lado3" placeholder="Lado l">
+                            <p id="vol_cubo_res"></p>
+
+                            <button onclick="volumencubo()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="vol_paralelepipedo">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/paralelepipedo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Paralelepípedo</h5>
+                            <p class="card-text">Volumen</p>
+
+                            <input type="number" class="form-control mb-2" id="par_ladob" placeholder="Lado b">
+                            <input type="number" class="form-control mb-2" id="par_ladol" placeholder="Lado l">
+                            <input type="number" class="form-control mb-3" id="par_altura" placeholder="Altura">
+                            <p id="vol_par"></p>
+
+                            <button onclick="volumenparalelepipedo()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="vol_cilindro">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/cilindro.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cilindro</h5>
+                            <p class="card-text">Volumen</p>
+
+                            <input type="number" class="form-control mb-2" id="cil_r" placeholder="Radio">
+                            <input type="number" class="form-control mb-3" id="cil_altura" placeholder="Altura">
+                            <p id="vol_cil"></p>
+
+                            <button onclick="volumencilindro()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="row justify-content-center text-center g-4">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="vol_esfera">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/esfera.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Esfera</h5>
+                            <p class="card-text">Volumen</p>
+
+                            <input type="number" class="form-control mb-2" id="es_r" placeholder="Radio">
+                            <p id="vol_es"></p>
+
+                            <button onclick="volumenesfera()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="vol_cono">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/cono.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cono</h5>
+                            <p class="card-text">Volumen</p>
+
+                            <input type="number" class="form-control mb-2" id="cono_r" placeholder="Radio">
+                            <input type="number" class="form-control mb-2" id="cono_altura" placeholder="Altura">
+                            <p id="vol_cono_res"></p>
+
+                            <button onclick="volumencono()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/volumenes.js"></script>
+
+</body>
+
+</html>

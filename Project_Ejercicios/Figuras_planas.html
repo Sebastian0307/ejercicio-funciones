@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="assets/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/Css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Áreas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#areatriangulo">Área Triángulo</a></li>
+                                <li><a class="dropdown-item" href="#areaparalelogramo">Área Paralelogramo</a></li>
+                                <li><a class="dropdown-item" href="#arearectangulo">Área Rectángulo</a></li>
+                                <li><a class="dropdown-item" href="#areacuadrado">Área Cuadrado</a></li>
+                                <li><a class="dropdown-item" href="#arearombo">Área Rombo</a></li>
+                                <li><a class="dropdown-item" href="#areacometa">Área Cometa</a></li>
+                                <li><a class="dropdown-item" href="#areatrapecio">Área Trapecio</a></li>
+                                <li><a class="dropdown-item" href="#areacirculo">Área Círculo</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#Perímetros" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Perímetros
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#pertriangulo">Perímetro Triángulo</a></li>
+                                <li><a class="dropdown-item" href="#perparalelogramo">Perímetro Paralelogramo</a></li>
+                                <li><a class="dropdown-item" href="#perrectangulo">Perímetro Rectángulo</a></li>
+                                <li><a class="dropdown-item" href="#percuadrado">Perímetro Cuadrado</a></li>
+                                <li><a class="dropdown-item" href="#perrombo">Perímetro Rombo</a></li>
+                                <li><a class="dropdown-item" href="#percometa">Perímetro Cometa</a></li>
+                                <li><a class="dropdown-item" href="#pertrapecio">Perímetro Trapecio</a></li>
+                                <li><a class="dropdown-item" href="#percirculo">Perímetro Círculo</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Volúmenes
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Figuras_solidas.html#vol_cubo">Volumen Cubo</a></li>
+                                <li><a class="dropdown-item" href="Figuras_solidas.html#vol_paralelepipedo">Volumen
+                                        Paralelepípedo</a></li>
+                                <li><a class="dropdown-item" href="Figuras_solidas.html#vol_cilindro">Volumen
+                                        Cilindro</a></li>
+                                <li><a class="dropdown-item" href="Figuras_solidas.html#vol_esfera">Volumen Esfera</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Figuras_solidas.html#vol_cono">Volumen Cono</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h2 class="text-center mb-4" id="Perímetros">Perímetros</h2>
+
+
+        <section>
+
+            <div class="row justify-content-center text-center g-4">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="pertriangulo">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/triangulo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Triángulo</h5>
+                            <p class="card-text">Perímetro</p>
+
+                            <input type="number" class="form-control mb-2" id="tri_a" placeholder="Lado a">
+                            <input type="number" class="form-control mb-2" id="tri_b" placeholder="Lado b">
+                            <input type="number" class="form-control mb-3" id="tri_c" placeholder="Lado c">
+                            <p id="peri_tri"></p>
+
+                            <button onclick="pertriangulo()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="perparalelogramo">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/paralelogramo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Paralelogramo</h5>
+                            <p class="card-text">Perímetro</p>
+
+                            <input type="number" class="form-control mb-2" id="par_a" placeholder="Lado a">
+                            <input type="number" class="form-control mb-3" id="par_b" placeholder="Lado b">
+                            <p id="peri_par"></p>
+
+                            <button onclick="perparalelogramo()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="perrectangulo">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/Rectangulo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Rectángulo</h5>
+                            <p class="card-text">Perímetro</p>
+
+                            <input type="number" class="form-control mb-2" id="rec_a" placeholder="Lado a">
+                            <input type="number" class="form-control mb-3" id="rec_b" placeholder="Lado b">
+                            <p id="peri_rec"></p>
+
+                            <button onclick="perrectangulo()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row justify-content-center text-center g-4">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="percuadrado">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/cuadrado.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cuadrado</h5>
+                            <p class="card-text">Perímetro</p>
+
+                            <input type="number" class="form-control mb-2" id="cua_a" placeholder="Lado a">
+                            <p id="peri_cua"></p>
+
+                            <button onclick="percuadrado()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="perrombo">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/rombo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Rombo</h5>
+                            <p class="card-text">Perímetro</p>
+
+                            <input type="number" class="form-control mb-2" id="rom_a" placeholder="Lado a">
+                            <p id="peri_rom"></p>
+
+                            <button onclick="perrombo()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="percometa">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/cometa.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cometa</h5>
+                            <p class="card-text">Perímetro</p>
+
+                            <input type="number" class="form-control mb-2" id="com_a" placeholder="Lado a">
+                            <input type="number" class="form-control mb-3" id="com_b" placeholder="Lado b">
+                            <p id="peri_com"></p>
+
+                            <button onclick="percometa()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row justify-content-center text-center g-4">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="pertrapecio">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/trapecio.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Trapecio</h5>
+                            <p class="card-text">Perímetro</p>
+
+                            <input type="number" class="form-control mb-2" id="tra_B" placeholder="Lado B">
+                            <input type="number" class="form-control mb-2" id="tra_b" placeholder="Lado b">
+                            <input type="number" class="form-control mb-2" id="tra_a" placeholder="Lado a">
+                            <input type="number" class="form-control mb-3" id="tra_c" placeholder="Lado c">
+                            <p id="peri_tra"></p>
+
+                            <button onclick="pertrapecio()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="percirculo">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/circulo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Círculo</h5>
+                            <p class="card-text">Perímetro</p>
+
+                            <input type="number" class="form-control mb-2" id="r_cir" placeholder="Radio">
+                            <p id="peri_cir"></p>
+                            <p id="peri_cir2"></p>
+
+                            <button onclick="percirculo()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="text-center mt-5 mb-4">Áreas</h2>
+
+        <section>
+            <div class="row justify-content-center text-center g-4">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="areatriangulo">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/triangulo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Triángulo</h5>
+                            <p class="card-text">Área</p>
+
+                            <input type="number" class="form-control mb-2" id="tri_base" placeholder="Base">
+                            <input type="number" class="form-control mb-3" id="tri_altura" placeholder="Altura">
+                            <p id="area_tri"></p>
+
+                            <button onclick="areatriangulo()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="areaparalelogramo">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/paralelogramo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Paralelogramo</h5>
+                            <p class="card-text">Área</p>
+
+                            <input type="number" class="form-control mb-2" id="par_lado_b" placeholder="Lado b">
+                            <input type="number" class="form-control mb-3" id="par_altura" placeholder="Altura">
+                            <p id="area_par"></p>
+
+                            <button onclick="areaparalelogramo()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="arearectangulo">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/Rectangulo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Rectángulo</h5>
+                            <p class="card-text">Área</p>
+
+                            <input type="number" class="form-control mb-2" id="rec_lado_a" placeholder="Lado a">
+                            <input type="number" class="form-control mb-3" id="rec_lado_b" placeholder="Lado b">
+                            <p id="area_rec"></p>
+
+                            <button onclick="arearectangulo()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="row justify-content-center text-center g-4">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="areacuadrado">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/cuadrado.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cuadrado</h5>
+                            <p class="card-text">Área</p>
+
+                            <input type="number" class="form-control mb-2" id="cua_lado_a" placeholder="Lado a">
+                            <p id="area_cua"></p>
+
+                            <button onclick="areacuadrado()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="arearombo">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/rombo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Rombo</h5>
+                            <p class="card-text">Área</p>
+
+                            <input type="number" class="form-control mb-2" id="dia_mayor"
+                                placeholder="Diagonal mayor D">
+                            <input type="number" class="form-control mb-2" id="dia_menor"
+                                placeholder="Diagonal menor d">
+                            <p id="area_rom"></p>
+
+                            <button onclick="arearombo()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="areacometa">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/cometa.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cometa</h5>
+                            <p class="card-text">Área</p>
+
+                            <input type="number" class="form-control mb-2" id="com_dia_mayor"
+                                placeholder="Diagonal mayor D">
+                            <input type="number" class="form-control mb-3" id="com_dia_menor"
+                                placeholder="Diagonal mayor d">
+                            <p id="area_com"></p>
+
+                            <button onclick="areacometa()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row justify-content-center text-center g-4">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="areatrapecio">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/trapecio.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Trapecio</h5>
+                            <p class="card-text">Área</p>
+
+                            <input type="number" class="form-control mb-2" id="tra_lado_B" placeholder="Lado B">
+                            <input type="number" class="form-control mb-2" id="tra_lado_b" placeholder="Lado b">
+                            <input type="number" class="form-control mb-2" id="tra_altura" placeholder="Altura">
+                            <p id="area_tra"></p>
+
+                            <button onclick="areatrapecio()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" id="areacirculo">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/circulo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Círculo</h5>
+                            <p class="card-text">Área</p>
+
+                            <input type="number" class="form-control mb-2" id="r_circulo" placeholder="Radio">
+                            <p id="area_cir"></p>
+                            <p id="area_cir2"></p>
+
+                            <button onclick="areacirculo()" class="btn btn-primary w-100">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/Perimetros.js"></script>
+
+</body>
+
+</html>
